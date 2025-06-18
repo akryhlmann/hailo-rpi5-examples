@@ -62,7 +62,7 @@ def app_callback(pad, info, user_data):
     detections = roi.get_objects_typed(hailo.HAILO_DETECTION)
 
     # Parse the detections
- detection_count = 0
+detection_count = 0
 line_y = int(height / 2)
 
 for detection in detections:
